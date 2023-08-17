@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 50px;
+    background-color: #18191C;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+form{
+    width: 800px;
+    margin: auto;
+}
+
+.input-lable{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    margin-right: 35px;
+}
+
+.input{
+    flex-shrink: 0;
+    width: 470px;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;
+}
+
+.radio-set{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-legend{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.radio-container{
+    width: 470px;
+    display: block;
+}
+
+.radio-label{
+    margin-right: 50px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio{
+    width: 25px;
+    height: 25px;
+    /* opacity: 0; */
+    margin-right: 15px;
+
+    /* Здесь вопрос почему на примере используется прозрачность, но при этом у него видно Border круга. Если я задаю прозрачность круг исчезает. */
+}
+
+.radio-title{
+    font-size: inherit;
+}
+
+.input-textarea{
+    min-width: 470px;
+    max-width: 470px;
+    min-height: 100px;
+    max-height: 250px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button{
+    min-width: 210px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 8px 15px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: inherit;
+    transition: background-color 0.2s linear; 
+    transition-duration: 0.2s; 
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transition-property: background-color;
+    cursor: pointer;
+
+    /* Здесь был вопрос почему не используется "transition-property: background-color;" */
+    /* Все работает но возможно некоторые строчки можно было не писать. По сути это уже работа из просмотра кода */
+}
+
+.button:hover{
+    background-color: #ffffff;
+}
+
+.button-blue{
+    background-color: #2E9AFF;
+}
+
+.button-orange{
+    background-color: #FF8630;
+    margin-left: 50px;
+}
+
